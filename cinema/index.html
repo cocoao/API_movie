@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CINEMA NOW.</title>
+
+  <!-- jQuery link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      function searchMovie(){
+        searchResult = $(".searchInput").val();
+        if(!searchResult){
+          alert("검색어를 입력해 주세요.");
+          return false;
+        }
+        location.href = '/cinema/search.html?key='+ searchResult;
+      }
+      $(".sendBtn").click(function(){
+        searchMovie();
+      });
+
+      //press enter
+      document.addEventListener('keydown',function(e){
+        const keyCode = e.keyCode;
+        if(keyCode == 13){
+          searchMovie();
+        }
+      })
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="searchBox">
+      <input type="text" class="searchInput">
+      <button type="button" class="sendBtn">검색</button>
+    </div>
+  </div>
+</body>
+</html>
