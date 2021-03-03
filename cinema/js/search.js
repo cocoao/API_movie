@@ -24,7 +24,7 @@ $(function(){
       // console.log(obj.items);
       if(obj.items.length == 0){
         alert("일치하는 영화가 없습니다.");
-        location.href = "/cinema/data/index.php";
+        location.href = "/cinema/index.php";
       }
 
       let itemContents = [];
@@ -49,7 +49,8 @@ $(function(){
                         itemContents.push($(itemHTML).get(0));
       });
       $(".resultBoxes").append(itemContents);
-
+      $(".searchboxes .searchBox input").attr('value',searchValue);
+      
       $(".resultBoxes").imagesLoaded(function() {
         $(".resultBoxes").masonry('appended', itemContents);
       });
