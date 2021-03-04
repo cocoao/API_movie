@@ -10,13 +10,17 @@
 
   <!-- css link -->
   <link rel="stylesheet" href="/cinema/css/reset.css">
+  <link rel="stylesheet" href="/cinema/plugin/lightslider.css">
   <link rel="stylesheet" href="/cinema/css/style.css">
   <link rel="stylesheet" href="/cinema/css/media.css">
 
   <!-- jQuery link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/cinema/plugin/lightslider.js"></script>
   <script src="/cinema/js/custom.js"></script>
   <script src="/cinema/js/recent.js"></script>
+  <script src="/cinema/js/genre.js"></script>
+  
 </head>
 <body>
   <div class="wrap">

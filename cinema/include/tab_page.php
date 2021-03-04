@@ -1,4 +1,4 @@
-<div class="sideTap">
+<div class="sideTab">
   <div class="navigation">
     <span class="tabBtn recent">
       <i class="fa fa-plus"></i><p>NEW</p>
@@ -26,11 +26,25 @@
           <button type="button" class="next allow">next</button>
         </div>
       </div>
-    </div>
+    </div><!-- end of recent -->
 
-    <div class="ganre tabpanel">
-    </div>
+    <div class="genre tabpanel">
+      <div class="genreBtns">
+        <button type ="button" value="action">ACTION</button>
+        <button type ="button" value="romance">ROMANCE</button>
+        <button type ="button" value="horror">HORROR</button>
+        <button type ="button" value="sci-fi">SF</button>
+        <button type ="button" value="fantasy">FANTASY</button>
+        <button type ="button" value="animation">ANIMATION</button>
+        <button type ="button" onclick="location.href='http://www.imdb.com/feature/genre/'">ETC.</button>
+      </div>
+      <div class="loading">
+        <img src="/cinema/img/loading.png" alt="">
+      </div>
+      <div class="genreSlideBox">
+        
+      </div>
+    </div><!-- end of genre -->
+    </div><!-- end of panel -->
 
-    </div><!-- end of recent tab -->
-
-</div>
+</div><!-- end of sideTab -->

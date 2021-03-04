@@ -1,37 +1,74 @@
 @media screen and (max-width:1200px){
+  /* main page style */
   .boxes{padding: 0 0 3% 50%;}
   .boxes .searchBox input{width: 60%;}
 
+  /* search page style */
   .center{width: 80%; margin-right: 12%;}
   .searchBoxes{padding: 10px;}
+
+  /* side tab style */
+  .container{padding-right: 50px;}
+  .genreBtns{width: 85%; padding-right: 50px;}
+  .genreSlideBox{width: 90%; padding-right: 50px;}
+
+  /* genre detail page style */
+  .detailBoxes .textBox h2{font-size: 30px;}
 }
 
 @media screen and (max-width:950px){
+  /* main page style */
   .boxes{padding: 0 0 3% 40%;}
   .boxes .logo h2 a{font-size: 50px;}
 
-  .sideTap .panel.on{width: 90%;}
-  .container{width: 90%; margin-left: 3%; justify-content: center; display: flex; align-items: center; flex-wrap: wrap; padding: 20px;}
-  .recent-movie-wrap{padding: 5px;}
-
+  /* search page style */
   .searchBoxes{padding: 10px;}
   .resultBoxes .movie_box, .resultBoxes .movieBox-sizer{width: 25%;}
   .boxes .searchBox h2 a{font-size: 45px;}
   .boxes .searchBox button{width: 15%;}
   .boxes .searchBox button i.fa{font-size: 24px;}
+
+  /* side tab style */
+  .sideTab .panel.on{width: 90%;}
+  .container{width: 90%; margin-left: 3%; justify-content: center; display: flex; align-items: center; flex-wrap: wrap; padding: 20px;}
+  .recent-movie-wrap{padding: 5px;}
+
+  .genreBtns button{margin: 3px;}
+  .genreBtns{padding-right: 10px; flex-wrap: wrap; justify-content: center; align-items: center;}
+  .genreBtns button{width: 20%; margin-bottom: 5px; font-size: 12px;}
+  .genreSlideBox{padding-right: 10px;}
+  .slideBox{padding:0;}
+  
+  /* genre detail page style */
+  .detailBoxes .textBox h2{font-size: 26px;}
 }
 
 @media screen and (max-width:700px){
+  /* main page style */
   .boxes{padding: 0 50px 0 0;}
   .resultBoxes .movie_box, .resultBoxes .movieBox-sizer{width: 25%;}
   .boxes .logo h2, .boxes .logo h2 a{text-align: center;}
+
   .boxes .searchBox{width: 65%; margin:0 auto;}
   .boxes .searchBox input{width: 80%; background: #c02b26; opacity: 0.9; z-index: -2;}
   .boxes .searchBox button{width: 20%;}
 
-  .sideTap{z-index: 101;}
-  .sideTap .navigation i.fa{font-size: 25px;}
-  .sideTap .navigation p{font-size: 12px;}
+  /* search page style */
+  .center{width: 80%; margin-right: 15%;}
+  .searchBoxes{padding: 10px 45px 10px 13px}
+  .resultBoxes .movie_box, .resultBoxes .movieBox-sizer{width: 33.33%;}
+  .searchBoxes .logo{width: 30%; padding: 10px 0 0;}
+  .boxes .logo h2 a.searchLogo{font-size: 35px !important; margin-right: 5px;}
+  .searchBoxes .searchBox{width: 60%; float: left; margin: 0 30px 0 5px;}
+  .searchBoxes .searchBox input{width: 85%;}
+  .searchBoxes .searchBox button{width: 15%;}
+  .searchBoxes .searchBox button i{font-size: 20px;}
+  .resultBoxes .movie_box{padding: 5px;}
+
+  /* side tab style */
+  .sideTab{z-index: 101;}
+  .sideTab .navigation i.fa{font-size: 25px;}
+  .sideTab .navigation p{font-size: 12px;}
 
   .container{width: 100%; margin: 0 25px 0 0; justify-content: center; display: flex; align-items: center; flex-wrap: wrap; padding: 0;}
   .recent-movie-wrap{width: 21%; padding: 7px;}
@@ -39,20 +76,17 @@
   .numBtns button{width: 20px; height: 20px; font-size: 10px;}
   .numBtns button.allow{width: 35px;}
 
-  .center{width: 80%; margin-right: 15%;}
-  .searchBoxes{padding: 10px 45px 10px 13px}
-  .resultBoxes .movie_box, .resultBoxes .movieBox-sizer{width: 33.33%;}
-  .searchBoxes .logo{width: 30%; padding: 10px 0 0;}
-  /* .searchBox .searchLogo{font-size: 30px !important;} */
-  .boxes .logo h2 a.searchLogo{font-size: 35px !important; margin-right: 5px;}
-  .searchBoxes .searchBox{width: 60%; float: left; margin: 0 30px 0 5px;}
-  .searchBoxes .searchBox input{width: 85%;}
-  .searchBoxes .searchBox button{width: 15%;}
-  .searchBoxes .searchBox button i{font-size: 20px;}
-  .resultBoxes .movie_box{padding: 5px;}
+  .genreBtns{width: 100%;}
+
+  /* genre detail page style */
+  .detailBoxes{width: 80%; margin: 50px 10%;}
+  .detailBoxes .imgBox{width: 100%; float: none;}
+  .detailBoxes .textBox{width: 100%; float: none;}
+
 }
 
 @media screen and (max-width:480px){
+  /* main page style */
   .boxes{padding: 0;}
   .boxes .logo h2 a{font-size: 40px;}
   .boxes .searchBox{width: 70%; margin:0 auto;}
@@ -60,21 +94,31 @@
   .boxes .searchBox button{width: 20%; height: 40px;}
   .boxes .searchBox button i.fa{font-size: 22px;}
 
-  .sideTap .navigation p{margin-left: 7px; line-height: 1;}
-  .sideTap, .sideTap .panel{height: 40px; width: 90vw; top: 0; left: 5vw; border-radius: 0 0 5px 5px; display: flex; align-items: center; z-index: 101;}
-  .sideTap .panel.on{height: 90vh;}
-  .container{margin: 20px 0 0 0;}
-  .recent-movie-wrap h3{font-size: 10px;}
-
-  .sideTap .navigation{flex-direction: row; width: auto;}
-  .sideTap .navigation .tabBtn{margin: 0 10px; flex-direction: row;}
-  .loading{padding-left: 75px;}
-
+  /* search page style */
   .searchBoxes{margin-top: 60px; flex-direction: column; padding-bottom: 20px;}
   .searchBoxes .logo{width: 100%;}
   .boxes .logo h2 a.searchLogo{font-size: 35px !important; margin-right: 5px;}
   .center{width: 90%; margin: auto;}
   .resultBoxes .movie_box, .resultBoxes .movieBox-sizer{width: 50%;}
-
   .resultBoxes .movie_box .textBox{font-size: 12px;}
+
+  /* side tab style */
+  .sideTab .navigation p{margin-left: 7px; line-height: 1;}
+  .sideTab .navigation{flex-direction: row; width: auto;}
+  .sideTab .navigation .tabBtn{margin: 0 10px; flex-direction: row;}
+
+  .sideTab, .sideTab .panel{height: 40px; width: 90vw; top: 0; left: 5vw; border-radius: 0 0 5px 5px; display: flex; align-items: center; z-index: 101;}
+  .sideTab .panel.on{height: 90vh;}
+
+  .tabpanel{margin: 20px 0 0 0;}
+  .recent-movie-wrap h3{font-size: 10px;}
+  .loading{padding-left: 75px;}
+
+  .panel.on .tabpanel.on{width: 100%; margin: 0; padding: 0;}
+  .genreBtns{padding: 0; width: 95%;}
+  .genreBtns button{width: 30%; justify-content: center;}
+  .genreSlideBox{padding: 0;}
+  .lSAction a{font-size: 12px; border: 0;}
+  .slideTxt h3{font-size: 10px;}
+  .slideTxt p{display: none;}
 }
