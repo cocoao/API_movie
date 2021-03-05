@@ -5,7 +5,7 @@ $(function(){
       alert("검색어를 입력해 주세요.");
       return false;
     }
-    location.href = '/cinema/search.php?key='+ searchResult;
+    location.href = '/cinema/pages/search.php?key='+ searchResult;
   }
   $(".sendBtn").click(function(){
     searchMovie();

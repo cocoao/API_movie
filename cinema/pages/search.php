@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CINEMA NOW.</title>
-
+  
   <!-- favicon link -->
   <link rel="icon" href="/cinema/img/cinema_favicon.ico">
   <link rel="apple-touch-icon" href="/cinema/img/cinema_favicon.ico">
@@ -20,29 +20,38 @@
 
   <!-- jQuery link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="/cinema/plugin/lightslider.js"></script>
   <script src="/cinema/js/custom.js"></script>
+  <script src="/cinema/js/search.js"></script>
   <script src="/cinema/js/recent.js"></script>
   <script src="/cinema/js/genre.js"></script>
 </head>
 <body>
   <div class="wrap">
-    <div class="bg">
     <?php
     include $_SERVER['DOCUMENT_ROOT'].'/cinema/include/tab_page.php';
     ?>
-      <div class="boxes clear">
-        <div class="logo">
-          <h2><a href="/cinema/index.php">CINEMA NOW.</a></h2>
-        </div>
-        <div class="searchBox clear">
-          <input type="text" class="searchInput">
-          <button type="button" class="sendBtn">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
+    <div class="boxes searchBoxes">
+      <div class="logo">
+        <h2><a href="/cinema/index.php" class="searchLogo">CINEMA NOW.</a></h2>
       </div>
-   </div>
+      <div class="searchBox clear">
+        <?php
+        $searchResult = $_GET['key'];
+        ?>
+        <input type="text" class="searchInput" value="<?=$searchResult?>">
+        <button type="button" class="sendBtn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="center">
+      <div class="resultBoxes">
+        <div class="movieBox-sizer"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

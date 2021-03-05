@@ -8,7 +8,6 @@ $(function(){
     $.ajax({
       url:'https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=10&page=' + page,
       success: function(data){
-        // console.log(data.data.movies);
         for(let i = 0; i < data.data.movies.length; i++){
           if(data.data.movies[i].title == ''){
             data.data.movies[i].title = 'No Title';
@@ -30,12 +29,10 @@ $(function(){
       }
     });
     currentPage = page;
-    // console.log(typeof(page));
   }
 
   $(".numBtns button.pageNum").click(function(){
     let btnValue = Number($(this).attr('value'));
-    // console.log(btnValue);
     $(".recent-movie-wrap").remove();
     $('.loading').show();
     getData(btnValue);
@@ -67,7 +64,6 @@ $(function(){
 
 
   $('.numBtns button').eq(1).trigger('click');
-  // getData(1);
 
   $(document).ajaxComplete(function(){
     $('.loading').hide();

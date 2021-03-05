@@ -17,7 +17,6 @@
 .resultBoxes .movie_box,.resultBoxes .movieBox-sizer{width: 20%; height: atuo;}
 .resultBoxes .movie_box{padding: 10px; position: relative;}
 .resultBoxes .movie_box .view_box{width: 100%; height: auto;  z-index: 100; position: relative;}
-/* .resultBoxes .movie_box .view_box span{position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.7); _display: none;} */
 .resultBoxes .movie_box img{width: 100%;}
 .resultBoxes .movie_box .textBox{display: flex; flex-direction: row; _justify-content: center; _align-items: center; flex-direction: column; text-align: left; padding: 7px 0; border-bottom: 3px solid #111; margin: 7px 0; border-top: 3px solid #111;}
 .resultBoxes .movie_box h2{_text-align: center; font-size: 16px; top: 0; width: 100%; background: #111; margin-bottom: 5px; padding: 5px; color:#c02b26; font-weight: 500; border: 3px solid #111;}
@@ -27,8 +26,6 @@
 .resultBoxes .movie_box:hover .textBox{display: flex;}
 .resultBoxes .movie_box:hover{background: #111; height: auto;}
 .resultBoxes .movie_box:hover p{color: #777;}
-
-
 
 /* sideTab style */
 .sideTab{width: 60px; height: 90vh;right: 0; position: fixed; top: 5vh; z-index: 101;}
@@ -66,7 +63,7 @@
 .genreBtns button{width: 15%; background: none; border: 1px solid #c02b26; color: #c02b26; margin: 5px;}
 .genreBtns button:hover,.genreBtns button.active{background: #c02b26; color: #111;}
 .genreSlideBox{width: 75%; height: auto; position: relative;}
-.genreSlideBox>div{margin: 30px 0; _display: none;}
+.genreSlideBox>div{margin: 30px 0;}
 .slideBox{padding: 5px;}
 .slideBox .genre-movie a{ color: #fff; z-index: 200;}
 .slideBox img{width: 100%;}
@@ -74,7 +71,7 @@
 .slideTxt h3{color: #c02b26; font-size: 16px;}
 .slideTxt p{color: #777;}
 .lSAction{width: 100%; z-index: 200; position: absolute; top: 50%; transform: translateY(-50%); height: auto; display: flex; justify-content: center; align-items: center; opacity: 0.5;}
-.lSAction a{font-size: 20px; color: #fff; width: 25px; height: 25px; border-radius: 50%; border: 2px solid #fff; text-align: center; line-height: 1;}
+.lSAction a{font-size: 20px; color: #fff; width: 25px; height: 25px; border-radius: 50%; border: 1px solid #fff; text-align: center; line-height: 1; background: #111;}
 
 /* genre detail page style */
 .detailBoxes{width: 90%; height: auto; margin: 50px 5%;}

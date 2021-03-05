@@ -9,9 +9,6 @@ $(function(){
     percentPosition: true
     });
 
-  // $(".resultBoxes").append(itemContents);
-
-  // console.log(decodeValue);
   $.ajax({
     type:"POST",
     url:"/cinema/data/api.php",
@@ -20,8 +17,7 @@ $(function(){
     },
     success: function(data){
       let obj = JSON.parse(data);
-      // console.log(obj);
-      // console.log(obj.items);
+
       if(obj.items.length == 0){
         alert("일치하는 영화가 없습니다.");
         location.href = "/cinema/index.php";
@@ -29,7 +25,6 @@ $(function(){
 
       let itemContents = [];
       $.each(obj.items, function(i,item){
-        // console.log(item.title);
         let itemHTML = `<div class="movie_box">
                         <span>
                           <h2>${item.title}</h2>

@@ -109,16 +109,20 @@
 
   .sideTab, .sideTab .panel{height: 40px; width: 90vw; top: 0; left: 5vw; border-radius: 0 0 5px 5px; display: flex; align-items: center; z-index: 101;}
   .sideTab .panel.on{height: 90vh;}
-
   .tabpanel{margin: 20px 0 0 0;}
-  .recent-movie-wrap h3{font-size: 10px;}
-  .loading{padding-left: 75px;}
-
   .panel.on .tabpanel.on{width: 100%; margin: 0; padding: 0;}
-  .genreBtns{padding: 0; width: 95%;}
+  .loading{height: 55vh;}
+
+  .container, .numContainer{margin: 0; padding: 30px 0 0 0;}
+  .recent-movie-wrap h3{font-size: 10px;}
+
+  .genreBtns{padding: 0; width: 95%;margin-top: 40px;}
   .genreBtns button{width: 30%; justify-content: center;}
-  .genreSlideBox{padding: 0;}
-  .lSAction a{font-size: 12px; border: 0;}
-  .slideTxt h3{font-size: 10px;}
+  .genreSlideBox{padding: 0 10%; width: 80%;}
+  .lSAction a{font-size: 17px !important; width: 20px; height: 20px;}
+  .slideTxt h3{font-size: 16px;}
   .slideTxt p{display: none;}
+
+  .lSAction>.lSPrev{left: 0; font-size: 15px;}
+  .lSAction>.lSNext{right: 0; font-size: 15px;}
 }

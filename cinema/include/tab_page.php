@@ -1,9 +1,10 @@
+
 <div class="sideTab">
   <div class="navigation">
     <span class="tabBtn recent">
       <i class="fa fa-plus"></i><p>NEW</p>
     </span>
-    <span class="tabBtn ganre">
+    <span class="tabBtn genre">
       <i class="fa fa-plus"></i><p>GENRE</p>
     </span>
   </div>
@@ -11,9 +12,9 @@
   <div class="panel clear">
     <div class="recent tabpanel">
       <div class="container clear">
-      <div class="loading">
-        <img src="/cinema/img/loading.png" alt="">
-      </div>
+        <div class="loading">
+          <img src="/cinema/img/loading.png" alt="">
+        </div>
       </div><!-- end of container -->
       <div class="numContainer">
         <div class="numBtns">
@@ -38,13 +39,11 @@
         <button type ="button" value="animation">ANIMATION</button>
         <button type ="button" onclick="location.href='http://www.imdb.com/feature/genre/'">ETC.</button>
       </div>
-      <div class="loading">
-        <img src="/cinema/img/loading.png" alt="">
-      </div>
       <div class="genreSlideBox">
-        
+        <span class="loading">
+          <img src="/cinema/img/loading.png" alt="">
+        </span>
       </div>
     </div><!-- end of genre -->
-    </div><!-- end of panel -->
-
+  </div><!-- end of panel -->
 </div><!-- end of sideTab -->
