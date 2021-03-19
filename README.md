@@ -1,4 +1,4 @@
-# CINEMA NOW.  [![LinkedIn badge](http://img.shields.io/badge/CINEMA NOW.-d23230?style=flat?link=http://cocoao.dothome.co.kr/cinema)](http://cocoao.dothome.co.kr/cinema)
+# CINEMA NOW.  [![LinkedIn badge](http://img.shields.io/badge/CINEMA_NOW.-d23230?style=flat?link=http://cocoao.dothome.co.kr/cinema)](http://cocoao.dothome.co.kr/cinema)
 ![cinema](https://user-images.githubusercontent.com/77706809/111744252-465be480-88ce-11eb-8bae-6ea58baf6b5f.gif)
 <br>
 <br>
